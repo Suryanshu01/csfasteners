@@ -10,7 +10,7 @@
     Cache-Control = "public, max-age=86400"
 
 [[redirects]]
-  from = "https://csfasteners.in/*"
-  to = "https://www.csfasteners.in/:splat"
+  from = "https://csfasteners.com/*"
+  to = "https://www.csfasteners.com/:splat"
   status = 301
   force = true
