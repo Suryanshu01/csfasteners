@@ -1,10 +1,29 @@
 [build]
   publish = "."
 
+# Security headers + default caching for HTML / clean-URL pages.
+# HTML must always revalidate so a new deploy is visible immediately
+# (no more stale/half-styled pages stuck in the browser cache).
 [[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Static assets change rarely and can be cached longer for speed.
+[[headers]]
+  for = "/*.css"
+  [headers.values]
     Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
