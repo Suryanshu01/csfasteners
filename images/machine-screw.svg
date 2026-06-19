@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8c976"/><stop offset="0.5" stop-color="#d4a843"/><stop offset="1" stop-color="#b08a2e"/>
+    </linearGradient>
+  </defs>
+  <circle cx="200" cy="200" r="150" fill="none" stroke="#d4a843" stroke-opacity="0.14" stroke-width="1" stroke-dasharray="5 7"/>
+  <circle cx="200" cy="200" r="112" fill="none" stroke="#d4a843" stroke-opacity="0.18" stroke-width="1"/>
+  <path d="M 177.0 100.0 L 170.0 108.3 L 177.0 116.7 L 170.0 125.0 L 177.0 133.3 L 170.0 141.7 L 177.0 150.0 L 170.0 158.3 L 177.0 166.7 L 170.0 175.0 L 177.0 183.3 L 170.0 191.7 L 177.0 200.0 L 170.0 208.3 L 177.0 216.7 L 170.0 225.0 L 177.0 233.3 L 170.0 241.7 L 177.0 250.0 L 170.0 258.3 L 177.0 266.7 L 170.0 275.0 L 177.0 283.3 L 170.0 291.7 L 177.0 300.0 L 223.0 300.0 L 223.0 300.0 L 230.0 291.7 L 223.0 283.3 L 230.0 275.0 L 223.0 266.7 L 230.0 258.3 L 223.0 250.0 L 230.0 241.7 L 223.0 233.3 L 230.0 225.0 L 223.0 216.7 L 230.0 208.3 L 223.0 200.0 L 230.0 191.7 L 223.0 183.3 L 230.0 175.0 L 223.0 166.7 L 230.0 158.3 L 223.0 150.0 L 230.0 141.7 L 223.0 133.3 L 230.0 125.0 L 223.0 116.7 L 230.0 108.3 L 223.0 100.0 Z" fill="url(#g)" stroke="#1a1d23" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="142" y="60" width="116" height="44" rx="5" fill="url(#g)" stroke="#1a1d23" stroke-width="2"/>
+  <rect x="160" y="78" width="80" height="7" rx="3" fill="#1a1d23"/>
+  
+</svg>

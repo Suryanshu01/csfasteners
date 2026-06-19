@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8c976"/><stop offset="0.5" stop-color="#d4a843"/><stop offset="1" stop-color="#b08a2e"/>
+    </linearGradient>
+  </defs>
+  <circle cx="200" cy="200" r="150" fill="none" stroke="#d4a843" stroke-opacity="0.14" stroke-width="1" stroke-dasharray="5 7"/>
+  <circle cx="200" cy="200" r="112" fill="none" stroke="#d4a843" stroke-opacity="0.18" stroke-width="1"/>
+  <path d="M 178.0 100.0 L 168.0 112.5 L 178.0 125.0 L 168.0 137.5 L 178.0 150.0 L 168.0 162.5 L 178.0 175.0 L 168.0 187.5 L 178.0 200.0 L 168.0 212.5 L 178.0 225.0 L 168.0 237.5 L 178.0 250.0 L 168.0 262.5 L 178.0 275.0 L 168.0 287.5 L 178.0 300.0 L 200.0 346.0 L 222.0 300.0 L 232.0 287.5 L 222.0 275.0 L 232.0 262.5 L 222.0 250.0 L 232.0 237.5 L 222.0 225.0 L 232.0 212.5 L 222.0 200.0 L 232.0 187.5 L 222.0 175.0 L 232.0 162.5 L 222.0 150.0 L 232.0 137.5 L 222.0 125.0 L 232.0 112.5 L 222.0 100.0 Z" fill="url(#g)" stroke="#1a1d23" stroke-width="2" stroke-linejoin="round"/>
+  <polygon points="150,64 250,64 280,86 250,108 150,108 120,86" fill="url(#g)" stroke="#1a1d23" stroke-width="2"/>
+  <polygon points="186,84 193,72 207,72 214,84 207,96 193,96" fill="#1a1d23"/>
+  <g stroke="#c8ccd4" stroke-opacity="0.5" stroke-width="1.5" fill="none"><path d="M300 118 L324 118 M300 300 L324 300 M312 118 L312 300" stroke-dasharray="4 4"/></g><text x="332" y="214" fill="#c8ccd4" font-family="monospace" font-size="13" opacity="0.7">spec</text>
+</svg>
