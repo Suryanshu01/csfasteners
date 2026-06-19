@@ -70,3 +70,15 @@ footer{background:#111318;border-top:1px solid var(--steel-mid);padding:48px 0 3
 .cta-band p{color:var(--zinc);margin:0 auto 28px;font-size:16px;max-width:560px;line-height:1.7}
 .cta-band .btn{margin:0 6px}
 @media(max-width:900px){.product-hero h1{font-size:32px}.related-grid{grid-template-columns:1fr 1fr}.spec-table td:first-child{width:auto}}
+
+
+/* ---- FAQ accordion ---- */
+.faq{padding:80px 0}
+.faq-list{max-width:840px;margin:32px auto 0}
+.faq-item{border:1px solid var(--steel-mid);border-radius:12px;margin-bottom:14px;background:var(--steel-light)}
+.faq-item summary{list-style:none;cursor:pointer;padding:20px 24px;font-size:16px;font-weight:700;color:var(--white);display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:'+';color:var(--accent);font-size:26px;font-weight:300;line-height:1;flex-shrink:0;transition:transform .3s}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item .faq-a{padding:0 24px 20px;color:var(--zinc);line-height:1.75;font-size:15px}
+.faq-item .faq-a a{color:var(--accent)}
