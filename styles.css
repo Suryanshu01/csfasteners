@@ -87,3 +87,13 @@ footer{background:#111318;border-top:1px solid var(--steel-mid);padding:48px 0 3
 .product-illustration{text-align:center;margin:0 0 36px}
 .product-illustration img{width:240px;max-width:62%;height:auto}
 .product-illustration figcaption{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:1px;color:var(--zinc);text-transform:uppercase;margin-top:10px}
+
+/* ---- language switcher + RTL ---- */
+.langbar{padding:18px 0 0;font-family:'DM Mono',monospace;font-size:12px;letter-spacing:1px}
+.langbar a{color:var(--zinc);text-decoration:none;margin-right:14px}
+.langbar a:hover{color:var(--accent)}
+.langbar a.active{color:var(--accent);font-weight:700}
+[dir="rtl"] .breadcrumb,[dir="rtl"] .product-hero,[dir="rtl"] .prose,[dir="rtl"] .faq-item summary{text-align:right}
+[dir="rtl"] .prose ul{margin:0 22px 20px 0;padding:0}
+[dir="rtl"] .langbar a{margin-right:0;margin-left:14px}
+[dir="rtl"] .faq-item summary{flex-direction:row-reverse}
