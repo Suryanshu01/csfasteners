@@ -21,7 +21,10 @@
 [[headers]]
   for = "/*.css"
   [headers.values]
-    Cache-Control = "public, max-age=86400"
+    # Revalidate on each request. The browser still gets a cheap 304 when
+    # nothing changed, but a deployed style change is visible immediately
+    # instead of being masked by a 24h cache.
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/*.png"
