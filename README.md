@@ -1,13 +1,13 @@
-# C S Fasteners — Website
+# C S Fasteners Website
 
 Industrial screw manufacturer website. Deployed via Netlify.
 
 ## Files
-- `index.html` — Main website (single page, all CSS inline)
-- `success.html` — Form submission thank-you page
-- `robots.txt` — SEO crawler instructions
-- `sitemap.xml` — Sitemap for Google indexing
-- `netlify.toml` — Netlify config (headers, redirects)
+- `index.html`: Main website (single page, all CSS inline)
+- `success.html`: Form submission thank-you page
+- `robots.txt`: SEO crawler instructions
+- `sitemap.xml`: Sitemap for Google indexing
+- `netlify.toml`: Netlify config (headers, redirects)
 
 ## Setup: GitHub → Netlify
 
