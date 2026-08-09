@@ -1,4 +1,4 @@
-/* Self-hosted fonts (OFL) — removes blocked Google Fonts dependency, works in China & everywhere */
+/* Self-hosted fonts (OFL): removes blocked Google Fonts dependency, works in China & everywhere */
 @font-face{font-family:'Be Vietnam Pro';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/bevietnampro-400-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
 @font-face{font-family:'Be Vietnam Pro';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/bevietnampro-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 @font-face{font-family:'Be Vietnam Pro';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/bevietnampro-500-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
@@ -59,6 +59,12 @@ footer{background:#111318;border-top:1px solid var(--steel-mid);padding:48px 0 3
 .spec-table td{padding:14px 16px;border-bottom:1px solid var(--steel-mid);font-size:14px;vertical-align:top}
 .spec-table td:first-child{color:var(--zinc);text-transform:uppercase;letter-spacing:1px;font-size:11px;font-weight:600;width:210px;font-family:'DM Mono',monospace}
 .spec-table td:last-child{color:var(--zinc-bright);font-weight:600}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:24px 0}
+.data-table{width:100%;min-width:520px;border-collapse:collapse;margin:0;font-size:14px}
+.data-table th{padding:12px 14px;text-align:left;border-bottom:2px solid var(--accent);color:var(--zinc);text-transform:uppercase;letter-spacing:1px;font-size:11px;font-weight:600;font-family:'DM Mono',monospace}
+.data-table td{padding:11px 14px;border-bottom:1px solid var(--steel-mid);color:var(--zinc-bright);vertical-align:top}
+.data-table td:first-child{color:var(--white);font-weight:600}
+.prose .small{font-size:12px;color:var(--zinc);opacity:.8}
 .related{padding:64px 0;border-top:1px solid var(--steel-mid)}
 .related-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:24px}
 .related-card{display:block;background:var(--steel-light);border:1px solid var(--steel-mid);border-radius:12px;padding:22px;text-decoration:none;transition:all .3s}
