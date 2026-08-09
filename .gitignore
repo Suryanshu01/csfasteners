@@ -1,0 +1,4 @@
+# Internal strategy notes: keep out of the deployed site.
+# Netlify publishes the whole repo and robots.txt is Allow: /,
+# so anything committed here is publicly readable.
+OFF-PAGE-SEO-PLAYBOOK.md
