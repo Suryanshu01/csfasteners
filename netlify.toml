@@ -1,5 +1,10 @@
 [build]
   publish = "."
+  # Ping IndexNow (Bing/Copilot, Yandex, Seznam, Naver) with the sitemap URLs
+  # on every deploy. Google does not support IndexNow and continues to use
+  # sitemap.xml + Search Console. Trailing `|| true` guarantees a failed or
+  # timed-out ping can never break a deploy.
+  command = "bash scripts/indexnow.sh || true"
 
 # Security headers + default caching for HTML / clean-URL pages.
 # HTML must always revalidate so a new deploy is visible immediately
