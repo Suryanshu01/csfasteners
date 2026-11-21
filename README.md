@@ -59,13 +59,22 @@ Industrial screw manufacturer website. Deployed via Netlify.
 4. Submit sitemap: enter `sitemap.xml` in the sitemaps section
 5. Request indexing for your homepage URL
 
-## SEO Notes
-- Update `sitemap.xml` with your actual domain (replace csfasteners.in)
-- Update `robots.txt` with your actual domain
-- Update canonical URL in `index.html` with your actual domain
-- Submit site to Google Search Console and Bing Webmaster Tools
-- Create a Google Business Profile for "C S Fasteners" with factory address
-- The structured data (JSON-LD) includes Organization, Products, and FAQ schema
+## Google search visibility
+
+The production domain is `https://csfasteners.com`. Use each page's canonical URL in internal links and in the sitemap. When adding a public page, add its `.html` redirect to `_redirects`. Update its sitemap `lastmod` when its content, markup or links change significantly.
+
+Submit `https://csfasteners.com/sitemap.xml` under **Sitemaps** in Google Search Console. Use **URL Inspection** on the homepage and the priority pages below to check the Google-selected canonical and request a recrawl after deploying.
+
+| Search query to track | Preferred landing page |
+| --- | --- |
+| screw manufacturer in Chandigarh | `/` |
+| screw manufacturer in India | `/screw-manufacturer-in-india` |
+| custom screw manufacturer in India | `/custom-screws` |
+| self-tapping screw manufacturer | `/self-tapping-screws` |
+| machine screw manufacturer | `/machine-screws` |
+| white-label screw manufacturing | `/white-label-screw-manufacturing` |
+
+In **Performance → Search results**, filter to India and compare clicks, impressions and average position for each query and page pair over consecutive 28-day periods. Use Google Business Profile performance to track local discovery and actions from Maps.
 
 ## Form Handling
 - Forms are processed by Netlify Forms (free, up to 100 submissions/month)
