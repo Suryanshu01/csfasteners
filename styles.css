@@ -49,6 +49,7 @@ footer{background:#111318;border-top:1px solid var(--steel-mid);padding:48px 0 3
 .product-hero .lead{font-size:18px;color:var(--zinc);line-height:1.7;max-width:760px;margin-bottom:32px}
 .prose{padding:8px 0 48px;max-width:840px}
 .prose h2{font-size:30px;font-weight:800;color:var(--white);letter-spacing:-.5px;margin:44px 0 16px}
+.prose h2[id]{scroll-margin-top:90px}
 .prose h3{font-size:20px;font-weight:700;color:var(--white);margin:28px 0 12px}
 .prose p{font-size:16px;color:var(--zinc);line-height:1.8;margin-bottom:16px}
 .prose ul{margin:0 0 20px 22px;color:var(--zinc);line-height:1.8}
