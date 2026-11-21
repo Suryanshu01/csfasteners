@@ -6,26 +6,26 @@
 <meta name="theme-color" content="#1a1d23">
 <link rel="icon" type="image/png" href="/favicon2.png">
 <title>Wood Screw Size Chart &amp; Metric Screw Sizes | C S Fasteners</title>
-<meta name="description" content="Look up wood screw gauge diameters in inches and millimetres. Compare metric screw sizes and thread pitches, and see how to measure screw length.">
+<meta name="description" content="Use the screw size lookup to convert inches and millimetres, check wood screw gauge diameters, and find metric thread pitch and tap drill sizes.">
 <link rel="canonical" href="https://csfasteners.com/screw-size-chart">
 <meta name="robots" content="index, follow">
 <meta name="author" content="C S Fasteners">
 <meta property="og:title" content="Wood Screw Size Chart &amp; Metric Screw Sizes | C S Fasteners">
-<meta property="og:description" content="Look up wood screw gauge diameters in inches and millimetres. Compare metric screw sizes and thread pitches, and see how to measure screw length.">
+<meta property="og:description" content="Use the screw size lookup to convert inches and millimetres, check wood screw gauge diameters, and find metric thread pitch and tap drill sizes.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://csfasteners.com/screw-size-chart">
 <meta property="og:site_name" content="C S Fasteners">
 <meta property="og:image" content="https://csfasteners.com/favicon2.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Wood Screw Size Chart &amp; Metric Screw Sizes | C S Fasteners">
-<meta name="twitter:description" content="Look up wood screw gauge diameters in inches and millimetres. Compare metric screw sizes and thread pitches, and see how to measure screw length.">
+<meta name="twitter:description" content="Use the screw size lookup to convert inches and millimetres, check wood screw gauge diameters, and find metric thread pitch and tap drill sizes.">
 <meta name="twitter:image" content="https://csfasteners.com/favicon2.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Wood Screw Size Chart and Metric Screw Sizes",
-  "description": "Look up wood screw gauge diameters in inches and millimetres. Compare metric screw sizes and thread pitches, and see how to measure screw length.",
+  "description": "Use the screw size lookup to convert inches and millimetres, check wood screw gauge diameters, and find metric thread pitch and tap drill sizes.",
   "image": "https://csfasteners.com/favicon2.png",
   "datePublished": "2026-08-09",
   "dateModified": "2026-11-21",
@@ -89,6 +89,7 @@
 }
 </script>
 <link rel="stylesheet" href="/styles.css">
+<script src="/scripts/screw-size-lookup.js" defer></script>
 </head>
 <body>
 <nav><div class="inner">
@@ -116,12 +117,39 @@
 </div></section>
 <section><div class="container"><div class="prose">
 
-<p><a href="#wood-screw-size-chart">Wood screw sizes</a> · <a href="#metric-screw-size-chart">Metric screw sizes</a> · <a href="#how-to-measure-screw-length">How to measure length</a></p>
+<p><a href="#size-lookup">Size lookup and converter</a> · <a href="#wood-screw-size-chart">Wood screw sizes</a> · <a href="#metric-screw-size-chart">Metric screw sizes</a> · <a href="#how-to-measure-screw-length">How to measure length</a></p>
+
+<section class="size-lookup" id="size-lookup" aria-labelledby="size-lookup-title">
+  <h2 id="size-lookup-title">Screw size lookup and converter</h2>
+  <p>Look up an inch-series wood screw gauge or a metric machine screw size. Enter a length to convert between inches and millimetres.</p>
+  <form id="size-lookup-form" hidden>
+    <div class="size-lookup-fields">
+      <label for="lookup-size">Screw size
+        <span class="select-field"><select id="lookup-size">
+          <option value="">Choose a size</option>
+        </select></span>
+      </label>
+      <label for="lookup-length">Length
+        <input id="lookup-length" type="number" min="0" step="any" inputmode="decimal" placeholder="e.g. 1.25">
+      </label>
+      <label for="lookup-unit">Length unit
+        <span class="select-field"><select id="lookup-unit">
+          <option value="mm">Millimetres (mm)</option>
+          <option value="in">Inches (in.)</option>
+        </select></span>
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Show dimensions</button>
+    <p id="lookup-status" class="size-lookup-status" role="status"></p>
+    <dl id="lookup-results" class="size-lookup-results" hidden></dl>
+  </form>
+  <noscript><p>Use the <a href="#wood-screw-size-chart">wood screw chart</a> or <a href="#metric-screw-size-chart">metric screw chart</a> below. Multiply inches by 25.4 to get millimetres.</p></noscript>
+</section>
 
 <h2 id="wood-screw-size-chart">Wood screw size chart</h2>
 <p>Wood screw sizes combine diameter and length. A metric screw marked <strong>4 × 30 mm</strong> has a nominal diameter of 4 mm and a length of 30 mm. An inch-series screw marked <strong>#8 × 1¼ in.</strong> uses #8 as the gauge and 1¼ inches as the length. A #8 has a nominal outside thread diameter of about 4.17 mm.</p>
 <div class="table-scroll">
-<table class="data-table">
+<table class="data-table" id="wood-gauge-table">
 <tr><th scope="col">Wood screw gauge</th><th scope="col">Nominal diameter (in.)</th><th scope="col">Nominal diameter (mm)</th></tr>
 <tr><th scope="row">#2</th><td>0.086</td><td>2.18</td></tr>
 <tr><th scope="row">#4</th><td>0.112</td><td>2.84</td></tr>
@@ -142,7 +170,7 @@
 <h2 id="metric-screw-size-chart">Metric screw size chart (ISO metric coarse)</h2>
 <p>The ISO metric coarse series is the default for general assembly. The tap drill column gives the hole to drill before cutting an internal thread; the clearance column gives the through-hole for the screw to pass freely.</p>
 <div class="table-scroll">
-<table class="data-table">
+<table class="data-table" id="metric-thread-table">
 <tr><th>Size</th><th>Coarse pitch (mm)</th><th>Fine pitch (mm)</th><th>Tap drill (mm)</th><th>Clearance hole (mm)</th></tr>
 <tr><td>M1.6</td><td>0.35</td><td>n/a</td><td>1.25</td><td>1.8</td></tr>
 <tr><td>M2</td><td>0.40</td><td>n/a</td><td>1.60</td><td>2.4</td></tr>
